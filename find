@@ -1,0 +1,54 @@
+class link
+{
+    public int iData;
+    public link next;
+    public link (int id) 
+        {
+          iData = id;
+          next = null;
+        } 
+
+
+    public void displayLink()
+      {
+        System.out.print(iData );
+      }
+
+}
+
+class linkList
+{ 
+     private Link first;
+     private linkList;
+        {
+        first = null;
+        }
+
+     public boolean isEmpty()
+       {
+        return (first == null);
+      }
+        
+ public void displayList()
+ {
+      link current = first;
+      while(current != null)
+          {
+            current.displayLink();
+            current = current.next;
+          }
+  public boolean find (int id)
+  {
+       Link current = first;
+       while(current.iData != id)
+           {
+              if(current.next == null)
+                    return false;
+              else
+                    current = current.next;
+            }
+                 return false;
+
+        }
+    } 
+}
