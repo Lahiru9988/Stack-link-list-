@@ -1,0 +1,35 @@
+/*Write a program to 
+i) Create a new linked list and insert four new links. 
+ii) Display the list. 
+iii) Remove the items one by one until the list is empty.*/
+
+
+//main app
+class LinkApp
+{
+public static void main(string[]args)
+ {
+        LinkList 11 = new LinkList(); //create a new linklist
+        
+        11.insertFirst(10);   //insert four items
+        11.insertFirst(20);
+        11.insertFirst(30);
+        11.insertFirst(40);
+
+        11.displayList();   //display the list
+    }
+   
+        while(!11.isEmpty())  //delete items only one by one
+       {
+        System.out.print("Deleting ");
+        11.deleteFirst().displayLink();
+        System.out.println();
+        11.displayList();
+       }
+    {
+        Link temp = 11.deleteFirst();
+        System.out.println("Deleted value ");	
+        11.displayList();
+    }
+
+}
