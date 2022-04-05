@@ -52,3 +52,43 @@ class linkList
         }
     } 
 }
+
+
+//insert link anywhere in the list
+public void insertFirst(int id)
+{
+    link newLink = new link(id);
+    newLink.next = first;
+    first = newLink;
+}
+
+public void insertMiddle(int key,int id)
+{
+    link newLink = new link(id);
+    link current = first;
+    while(current.next != null)
+    {
+        if(current.iData == key);
+        {                           
+
+            newLink.next = current.next;
+            current.next = newLink;
+        }
+        else
+               current = current.next;
+    }
+}
+
+  //delete a link with the specified value
+
+
+  public Link deleteFirst()
+  {
+    Link temp = first;
+    first = first.next;
+    return temp;
+  }
+       public Link deleteMiddle(int id)
+       {
+       }
+}  
