@@ -53,4 +53,33 @@ class QueueX{
         else
             return queueArray[front]; //return front element
     }
+
+
+    // removeing an element from Circular Queue
+    Public int remove() {
+        //check if queue is empty
+        if(nItems == 0){
+            System.out.println("Queue is empty");  
+        }
+        else{
+            int temp = queueArray[front++];
+            if(front == maxSize)
+                front = 0;
+            nItems--;
+            return temp;    
+       }
+            
+    }
+
+     //insert  an element into Circular Queue
+        Public void insert(int j) {
+        //check if queue is full
+        if (nItems == maxSize)
+            System.out.println("Queue is full");
+        else {
+            if(rear == maxSize-1)
+               rear=-1;
+            queueArray[rear] = j;
+            nItems++;
+        }    
 }
