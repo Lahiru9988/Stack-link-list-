@@ -64,7 +64,14 @@ class binaryTree{
         }     
    
     }
-
+   //inorder traversing method
+      public void inorderTraversal(Node root){
+      if(root != null){
+        inorderTraversal(root.leftChild);
+        System.out.println(root.idata);
+        inorderTraversal(root.rightChild);
+    }
+}
   
 }
  
