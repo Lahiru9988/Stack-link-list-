@@ -79,6 +79,14 @@ class binaryTree{
         preorderTraversal(root.leftChild);
         preorderTraversal(root.rightChild);
     }
+    //postorder traversing method
+    public void postorderTraversal(Node root){
+      if(root != null){
+        postorderTraversal(root.leftChild);
+        postorderTraversal(root.rightChild);
+        System.out.println(root.idata);
+    }
+    }
 }
 
 
