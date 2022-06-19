@@ -74,11 +74,14 @@ class QueueX{
      //insert  an element into Circular Queue
         Public void insert(int j) {
         //check if queue is full
-        if (nItems == maxSize)
+        if (nItems == maxSize[])
             System.out.println("Queue is full");
         else {
-            if(rear == maxSize-1)
+
+            if(rear == maxSize[]-1)
                rear=-1;
+               else
+                rear++;
             queueArray[rear] = j;
             nItems++;
         }    

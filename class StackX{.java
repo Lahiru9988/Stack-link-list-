@@ -33,5 +33,13 @@ public Double peek() {
     else {
         return stackArray[top];//top most element
     }
+
+    //implement  peek method using push and pop methods
+     public char peek(){
+        char ch=pop();
+        push(ch);
+        return ch;
+     }
+
 }
 
